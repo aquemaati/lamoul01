@@ -30,4 +30,6 @@ go to your piscine directory and run this command :
 Launch these commands and let lamoul test for you:
 ```lamoul01 js```
 ```lamoul01 go```
+if the command is not found, go to yourusername/go/bin and run this command
+```sudo rm lamoul01 /usr/local/bin/```
 ![show](imagetest.png)
