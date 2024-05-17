@@ -29,10 +29,10 @@ go to your piscine directory and run this command :
 go install github.com/aquemaati/lamoul01/cmd/lamoul01  
 ```
 # How to use
-Launch these commands and let lamoul test for you:
+Launch these commands and let lamoul01 test for you:
 ```sh
-lamoul01 js
-lamoul01 go
+lamoul01 js #if piscine-js
+lamoul01 go #if piscine-go
 ```
 ### Issue
 If command not found:<br>
