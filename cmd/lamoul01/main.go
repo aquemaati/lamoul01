@@ -1,10 +1,12 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"time"
 
 	"github.com/aquemaati/lamoul01/internal/watcher"
 )
@@ -41,12 +43,21 @@ func main() {
 
 func runJSTests(exName, folder, testPath string) {
 	fmt.Printf("🤪\033[34mRunning JavaScript tests for: %s\033[0m\n", exName)
-	cmd := exec.Command("node", testPath, folder, exName)
+
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	cmd := exec.CommandContext(ctx, "node", testPath, folder, exName)
 
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 
 	err := cmd.Run()
+	if ctx.Err() == context.DeadlineExceeded {
+		fmt.Printf("🤢\033[31mError: JavaScript tests for %s exceeded time limit of 10 seconds\033[0m\n", exName)
+		return
+	}
+
 	if err != nil {
 		fmt.Printf("🤢\033[31mError running JavaScript tests: %v\033[0m\n", err)
 	}
