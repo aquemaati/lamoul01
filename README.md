@@ -1,5 +1,5 @@
 # lamoul01 (for go and javascript)
-"Ever get stuck in the dreaded 3-minute push cooldown at the 01 Edu piscine? Say goodbye to the wait! Our app lets you run moulinette tests right in your terminal, so you can catch errors on the fly and keep your momentum going. No more ‘coding timeouts’—just pure, uninterrupted productivity!"
+Ever get stuck in the dreaded 3-minute push cooldown at the 01 Edu piscine? Say goodbye to the wait! Our app lets you run moulinette tests right in your terminal, so you can catch errors on the fly and keep your momentum going. No more ‘coding timeouts’—just pure, uninterrupted productivity!
 ![logo.webp](logo1.webp)
 
 # How to install
