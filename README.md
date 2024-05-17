@@ -1,6 +1,6 @@
-![logo.webp](logo1.webp)
 # lamoul01 (for go and javascript)
 Ever get stuck in the dreaded 3-minute push cooldown at the 01 Edu piscine? Say goodbye to the wait! Our app lets you run moulinette tests right in your terminal, so you can catch errors on the fly and keep your momentum going. No more ‘coding timeouts’—just pure, uninterrupted productivity!
+![logo.webp](logo1.webp)
 
 # How to install
 No cheater, it’s not going to be easy for you to go over the cooldown. First, you need to pass a few steps to prove you deserve lamoul01 to flex at the piscine.
@@ -30,6 +30,16 @@ go to your piscine directory and run this command :
 Launch these commands and let lamoul test for you:
 ```lamoul01 js```
 ```lamoul01 go```
-if the command is not found, go to yourusername/go/bin and run this command
+### Issue
+If command not found:<br>
+``` sh
+echo 'export GOPATH="$(go env GOPATH)"' >> ~/.zshrc
+echo 'export PATH="${PATH}:${GOPATH}/bin"' >> ~/.zshrc
+source ~/.zshrc
+```
+Or go to yourusername/go/bin:<br>
 ```sudo cp lamoul01 /usr/local/bin/```
 ![show](imagetest.png)
+
+
+
