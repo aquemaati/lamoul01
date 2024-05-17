@@ -25,7 +25,7 @@ You have to create a hidden directory named "lamoul01" in your Home directory. B
 (have to be done)
 ## Final step
 go to your piscine directory and run this command :
-```go install github.com/aquemaati/lamoul01/cmd/lamoul01  ``
+```go install github.com/aquemaati/lamoul01/cmd/lamoul01  ```
 
 # How to use
 Launch these commands and let lamoul test for you:
