@@ -26,7 +26,7 @@ You have to create a hidden directory named "lamoul01" in your Home directory. B
 ## Final step
 go to your piscine directory and run this command :
 ```go install github.com/aquemaati/lamoul01/cmd/lamoul01  ```
-![show](image.png)
+![show](imagetest.png)
 # How to use
 Launch these commands and let lamoul test for you:
 ```lamoul01 js```
