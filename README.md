@@ -25,11 +25,15 @@ You have to create a hidden directory named "lamoul01" in your Home directory. B
 (have to be done)
 ## Final step
 go to your piscine directory and run this command :
-```go install github.com/aquemaati/lamoul01/cmd/lamoul01  ```
+```sh
+go install github.com/aquemaati/lamoul01/cmd/lamoul01  
+```
 # How to use
 Launch these commands and let lamoul test for you:
-```lamoul01 js```
-```lamoul01 go```
+```sh
+lamoul01 js
+lamoul01 go
+```
 ### Issue
 If command not found:<br>
 ``` sh
@@ -38,7 +42,9 @@ echo 'export PATH="${PATH}:${GOPATH}/bin"' >> ~/.zshrc
 source ~/.zshrc
 ```
 Or go to yourusername/go/bin:<br>
-```sudo cp lamoul01 /usr/local/bin/```
+```sh
+sudo cp lamoul01 /usr/local/bin/
+```
 ![show](imagetest.png)
 
 
